@@ -8,13 +8,22 @@ if (DEBUGGIN) header.innerText += " (DEBUG=true: NO API REQUESTS ARE MADE)";
 const infoSpinner = document.getElementsByClassName("ip-info__spinner")[0];
 let map;
 
+var blackArrow = L.icon({
+    iconUrl: 'images/icon-location.svg',
+
+    iconSize:     [36, 46], // size of the icon
+    // iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    // popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 function setupMap(lag, lat) {
     if (map != undefined) map.remove();
-    map = L.map('map').setView([Number(lag), Number(lat)], 13);
+    map = L.map('map', { zoomControl: false }).setView([Number(lag), Number(lat)], 13);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-    L.marker([Number(lag), Number(lat)]).addTo(map);
+    L.marker([Number(lag), Number(lat)], {icon: blackArrow}).addTo(map);
+    map.setZoom(15);
 }
 
 class IpInfo {
