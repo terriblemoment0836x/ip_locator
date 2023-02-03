@@ -1,9 +1,10 @@
-# ip_locator
-![Preview](https://github.com/terriblemoment0836x/ip_locator/raw/main/preview/sc1.png)
-Web app that fetchs information such as (isp, location) about an ip address (a [frontendmentor](www.frontendmentor.io) challenge).
-See the live version at :
+# ip_locator 
 
-TODO
+Live version: [geoip-github.vercel.app](https://geoip-github.vercel.app/)
+
+![Preview](https://github.com/terriblemoment0836x/ip_locator/raw/main/preview/sc1.png)
+
+Web app that fetchs information such as (isp, location) about an ip address (a [frontendmentor](www.frontendmentor.io) challenge).
 
 ### Note: no API key is given, so a fake response object is provided, see below on how to run the app on your mechine with your api key.
 
