@@ -1,0 +1,17 @@
+{
+  "name": "geoip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.57.1"
+  },
+  "scripts": {
+    "live": "lite-server --baseDir=\"src/\"",
+    "sass": "cd src; sass --watch ../scss/main.scss style/main.css",
+    "start": "run-p live sass"
+  }
+}

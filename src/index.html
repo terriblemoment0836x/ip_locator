@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/main.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+ <script src="./main.js" defer></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Ip Address tracker</h1>
+  </header>
+  <main class="main">
+    <div class="pad-ctn">
+      <div class="ip-input ip-input--main">
+        <input type="text" placeholder="Search for any IP address" class="ip-input__input" />
+        <input type="submit" value="&gt;" class="ip-input__btn" >
+      </div>
+
+      <div class="ip-info ip-info--loading ip-info--main">
+        <div class="ip-info__spinner">
+          <svg class="spinner">
+            <circle cx="20" cy="20" r="18"></circle>
+          </svg>
+        </div>
+        <div class="ip-info__item">
+          <h4 class="ip-info__title">ip address</h4>
+          <p class="ip-info__value">0.0.0.0</p>
+        </div>
+        <div class="ip-info__item">
+          <h4 class="ip-info__title">Location</h4>
+          <p class="ip-info__value">0.0.0.0</p>
+        </div>
+        <div class="ip-info__item">
+          <h4 class="ip-info__title">TIMEZONE</h4>
+          <p class="ip-info__value">0.0.0.0</p>
+        </div>
+        <div class="ip-info__item">
+          <h4 class="ip-info__title">ISP</h4>
+          <p class="ip-info__value">0.0.0.0</p>
+        </div>
+      </div>
+    </div>
+      
+      <div class="ip-location ip-location--main">
+        <div id="map"></div>
+      </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,7 @@
+$fg1: hsl(0, 0%, 17%);
+$fg2: hsl(0, 0%, 59%);
+@mixin screen-min($width) {
+    @media all and (min-width: $width) {
+        @content
+    }
+}

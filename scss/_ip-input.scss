@@ -1,0 +1,45 @@
+@import "vars";
+$pad: 0.8rem;
+$rad: 10px;
+.ip-input {
+    display: flex;
+    justify-content: center;
+
+
+    &--main {
+        margin-bottom: 7rem;
+    }
+
+    &__input {
+        width: 100%;
+        @include screen-min(650px) {width: min(50vw, 600px) ;}
+        padding: $pad; 
+        color: $fg1;
+        border-radius: $rad 0px 0px $rad;
+        font-size: 0.9rem;
+        font-weight: 700;
+        transition-property: color, background-color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+    }
+
+    &__input--invalid {
+        background-color: lightcoral;
+        color: white;
+    }
+
+    &__btn {
+        background-color: black;
+        color: white;
+        padding: $pad ;
+        border-radius: 0 $rad $rad 0;
+        cursor: pointer;
+        transition: all  0.3s ease;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
