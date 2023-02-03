@@ -2,6 +2,8 @@
 
 Live version: [geoip-github.vercel.app](https://geoip-github.vercel.app/)
 
+Solution page [https://www.frontendmentor.io/solutions/ip-address-tracker-GlFe9DE6Xg](https://www.frontendmentor.io/solutions/ip-address-tracker-GlFe9DE6Xg)
+
 ![Preview](https://github.com/terriblemoment0836x/ip_locator/raw/main/preview/sc1.png)
 
 Web app that fetchs information such as (isp, location) about an ip address (a [frontendmentor](www.frontendmentor.io) challenge).
