@@ -1,5 +1,5 @@
-const API_KEY = "";
-const DEBUGGIN = true;
+const API_KEY = "at_UdqZhg7ZpoBpQOb9DhGwdjzVxgjdb";
+const DEBUGGIN = false;
 
 const header = document.getElementsByClassName("header__title")[0];
 if (API_KEY === "") header.innerText += " (NO API KEY FOUND)";
