@@ -114,7 +114,7 @@ function populate(data) {
 const hostInfo = new IpInfo();
 const hostInfoReq = hostInfo.fetchInfo();
 hostInfoReq.then( (data) => populate(data) )
-            .catch((err) => alert(err + "\mTry disabling your adblocker of you are using one."))
+            .catch((err) => alert(err + " Try disabling your adblocker of you are using one."))
     .finally(() => {infoSpinner.classList.add("ip-info__spinner--hidden");});
 
 const ipBtn = document.getElementsByClassName("ip-input__btn")[0];
@@ -128,7 +128,7 @@ ipBtn.addEventListener("click", (e) => {
         infoSpinner.classList.remove("ip-info__spinner--hidden");
         const hostInfoReq = hostInfo.fetchInfo();
         hostInfoReq.then( (data) => populate(data) )
-            .catch((err) => alert(err + "\mTry disabling your adblocker of you are using one."))
+            .catch((err) => alert(err + " Try disabling your adblocker of you are using one."))
             .finally(() => {infoSpinner.classList.add("ip-info__spinner--hidden");});
         ipInput.value = "";
     } else {
